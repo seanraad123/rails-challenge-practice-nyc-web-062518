@@ -1,7 +1,7 @@
 <% @buildings.each do |building| %>
-  <%= building.name %><br>
-  <%= building.country %><br>
-  <%= building.address %><br>
-  <%= building.rent_per_floor %><br>
-  <%= building.number_of_floors %><br>
+  <h1>Building Name: <%= link_to building.name, building %></h1>
+  Country: <%= building.country %><br>
+  Address: <%= building.address %><br>
+  Rent Per Floor: <%= building.rent_per_floor %><br>
+  Number of Floors: <%= building.number_of_floors %><br>
 <% end %>

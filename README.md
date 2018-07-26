@@ -44,11 +44,12 @@ The product team has deemed the following features as crucial:
 
 #### Building:
 
-* Users should be able to update a building's details
-* Users should be able to see a list of all buildings, as well as a list of all available floors for each building **This is fairly complicated so save it for later**
-* Users should be able to see a single building's details
+<!-- * Users should be able to update a building's details -->
+<!-- * Users should be able to see a list of all buildings-->
+...as well as a list of all available floors for each building **This is fairly complicated so save it for later**
+<!-- * Users should be able to see a single building's details
 	- On this page, a user should be able to see all of the companies that have offices in the building
-	- On this page, a user should be able to see how much total rent that building is making based on all the companies that have rented offices in that building
+	- On this page, a user should be able to see how much total rent that building is making based on all the companies that have rented offices in that building -->
 
 
 #### Company:
