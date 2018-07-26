@@ -8,10 +8,12 @@ class CompaniesController < ApplicationController
 
   def create
     @company = Company.new(company_params)
-    byebug
+    @office = Office.new(company: @company, building: Building.find(params[:office][:building_id]), floor: 1)
+
     # @buildings = Building.all
     # Office.create(company: @company, building:  )
-    if @company.save
+    if @company.save && @office.save
+      # flash[:notice]
       redirect_to buildings_path
     else
       render :new

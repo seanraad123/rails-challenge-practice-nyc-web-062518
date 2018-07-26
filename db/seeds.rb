@@ -35,7 +35,7 @@ companies = [
 
 
 companies.each do |company|
-  Company.create(name: company)
+  Company.create!(name: company)
 end
 
 titles = [
@@ -49,7 +49,7 @@ titles = [
 ]
 
 100.times do
-  Employee.create(
+  Employee.create!(
     name: Faker::Name.name_with_middle,
     title: titles.sample,
     company: Company.all.sample
@@ -58,7 +58,7 @@ end
 
 5.times do
   range = (1..6).to_a
-  Office.create(
+  Office.create!(
     building: Building.all.sample,
     company: Company.all.sample,
     floor: range.sample
