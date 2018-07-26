@@ -33,14 +33,6 @@ companies = [
   "Dog the Bounty Hunter LLC"
 ]
 
-# 5.times do
-#   Office.create(
-#     building: Building.all.sample,
-#     company: Company.all.sample
-#     floor: ?
-#     #Need to manually assign floors!
-#   )
-# end
 
 companies.each do |company|
   Company.create(name: company)
@@ -49,7 +41,7 @@ end
 titles = [
   "CEO",
   "Engineer",
-  "HR specialist"
+  "HR specialist",
   "Graphic designer",
   "CFO",
   "COO",
@@ -61,5 +53,14 @@ titles = [
     name: Faker::Name.name_with_middle,
     title: titles.sample,
     company: Company.all.sample
+  )
+end
+
+5.times do
+  range = (1..6).to_a
+  Office.create(
+    building: Building.all.sample,
+    company: Company.all.sample,
+    floor: range.sample
   )
 end
